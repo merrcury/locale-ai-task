@@ -1,15 +1,15 @@
 
-## Locale AI Task 
+# Locale AI Task 
 
-#### Problem Statement 
+## Problem Statement 
 
 XRides, delivers about a 200 rides per minute or 288,000 rides per day. Now, they want to send this data to your system via an API. Your task is to create this API and save the data into PostgreSQL.
 The API should be designed, keeping in mind the real-time s
 treaming nature of data and the burst of requests at peak times of the day. The user of this API expects an acknowledgment that the data is accepted and a way to track if the request fails.
 
-#### Utopia
+## Utopia
 
-##### Tech Stack
+### Tech Stack
 + Python
 + PostgreSQL (Database)
 + Docker (Container Service)
@@ -17,7 +17,7 @@ treaming nature of data and the burst of requests at peak times of the day. The 
 + Ngnix (Reverse Proxy)
 + Let's Encrypt (for TLS)
 
-##### Framworks & Libraries
+### Framworks & Libraries
 + FastAPI (an API microframework) (10 times faster than flask)
 + Uvicorn (an ASGI server)
 + Starlette (an ASGI framework for asyncio services)
@@ -25,12 +25,12 @@ treaming nature of data and the burst of requests at peak times of the day. The 
 + Pony (ORM)
 + Psycopg2 (library for connecting to PostgreSQL)
 
-##### Monitoring & Testing Services (Optional)
+### Monitoring & Testing Services (Optional)
 + Datadog (for Azure Instance Health)
 + JMeter / Postman (API Testing)
 + Github Actions/ Circle CI (Continous Integration)
 
-##### Structure and Coding 
+### Structure and Coding 
 
 We will use a straight forward approach to develop the API. 
 1. Define the Table in the Pony ORM. 
@@ -70,7 +70,7 @@ For the more protection, we can turn on cors
 
 8. For PGADMIN-4, You can use setup from my Github Repository (https://github.com/merrcury/pgadmin4-docker). 
 
-##### Analytics 
+### Analytics 
 As we are using Pony ORM, We have greater freedom in querying data. We can query data in multiple ways rather than designing traditional SQL Query for every use case. 
 Basic Analytics option can be baked right into the API, like distance(between source and destination), Failure, Driver with most trips, most visited route. 
 If We wanna talk more analytics and faster querying on data, I guess ELK Stack will be a perfect choice. (ElasticSearch, Logstash, Kibana)
